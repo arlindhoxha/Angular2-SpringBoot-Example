@@ -1,0 +1,6 @@
+com\ah\hello\HelloRestController.class
+com\ah\hero\HeroRestController.class
+com\ah\hero\Hero.class
+com\ah\hero\iDao.class
+com\ah\hello\Application.class
+com\ah\hero\HeroDAO.class
