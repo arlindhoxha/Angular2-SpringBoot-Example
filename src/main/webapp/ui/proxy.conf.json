@@ -1,0 +1,30 @@
+{
+  "/home": {
+    "target": "http://localhost:7001",
+    "secure": false
+  },
+  "/login": {
+    "target": "http://localhost:7001",
+    "secure": false
+  },
+  "/logout": {
+    "target": "http://localhost:7001",
+    "secure": false
+  },
+  "/user": {
+    "target": "http://localhost:7001",
+    "secure": false
+  },
+  "/heroes/delete/*": {
+    "target": "http://localhost:7001",
+    "secure": false
+  },
+  "/heroes/add/*": {
+    "target": "http://localhost:7001",
+    "secure": false
+  },
+  "/heroes/*": {
+    "target": "http://localhost:7001",
+    "secure": false
+  }
+}

@@ -1,0 +1,36 @@
+<div [hidden]="!authenticated()" class="hero-container">
+
+  <div class="add-hero">
+    <input #name placeholder="Enter a name for new hero"/>
+    <a class="btn" role="button" (click)="add(name.value)"><i class="fa fa-plus" aria-hidden="true"></i></a>
+  </div>
+
+  <table class="hero-header-table">
+    <thead class="hero-header">
+    <tr class="header-row">
+      <th class="id-header">Id</th>
+      <th class="name-header">Name</th>
+      <th class="delete-header">Delete</th>
+    </tr>
+    </thead>
+  </table>
+  <div class="hero-table-container">
+    <table class="hero-table">
+      <tbody class="hero-body">
+      <tr *ngFor="let hero of heroes; let idx=index" class="body-row">
+        <td class="id-col">{{hero.id}}</td>
+        <td class="name-col"><a (click)="goToHero(hero.id)">{{hero.name}}</a></td>
+        <td class="delete-col">
+          <a class="btn" role="button" (click)="delete(hero)" *ngIf="!isEditing"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+          <a class="btn" role="button" (click)="modify(hero)" *ngIf="!isEditing"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+          <a class="btn" role="button" (click)="cancel()" *ngIf="isEditing"><i class="fa fa-times" aria-hidden="true"></i></a>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div [hidden]="authenticated()">
+  Unauthorized
+</div>
