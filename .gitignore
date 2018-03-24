@@ -3,17 +3,19 @@
 #Project artifacts
 target/
 src/main/resources/META-INF/persistence.xml
-src/main/webapp/ui/e2e
-src/main/webapp/ui/node_modules
+
 
 # compiled output
 /dist
 /tmp
 /out-tsc
 
+# angular
+**/node_modules
+**/e2e
+
 # IDEs and editors
 **/.idea
-.idea/*
 *.iml
 .project
 .classpath
@@ -21,6 +23,7 @@ src/main/webapp/ui/node_modules
 *.launch
 .settings/
 *.sublime-workspace
+*.class
 
 # IDE - VSCode
 .vscode/*
@@ -38,10 +41,6 @@ npm-debug.log
 testem.log
 /typings
 yarn-error.log
-
-# e2e
-/e2e/*.js
-/e2e/*.map
 
 # System Files
 .DS_Store
