@@ -1,0 +1,87 @@
+.search-bar {
+  width: 100%;
+  height: 200px;
+  font-size: 150px;
+  border-radius: 10px;
+}
+
+
+.error {
+  border: 1px solid red;
+  border-radius: 10px;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.hero-container {
+  width: 30%;
+  height: 350px;
+}
+
+.hero-table {
+  width: 100%;
+  text-align: center;
+}
+
+.hero-header-table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.hero-header {
+  width: 100%;
+  background: black;
+  color: white;
+}
+
+.hero-body {
+  height: 300px;
+  max-height: 300px;
+  display: block;
+}
+
+.id-header {
+  width: 20%;
+}
+
+.name-header {
+  width: 48%;
+}
+
+.delete-header {
+  width: 32%;
+}
+
+.id-col {
+  width: 20%;
+  text-align: left;
+}
+
+.name-col {
+  width: 50%;
+  text-align: left;
+}
+
+.delete-col {
+  width: 30%;
+}
+
+.body-row {
+  width: 100%;
+  display: table;
+}
+
+.body-row:nth-child(even) {
+  background: #CCC;
+}
+
+.body-row:nth-child(odd) {
+  background: #FFF;
+}
+
+.hero-table-container {
+   overflow-y: scroll;
+}
