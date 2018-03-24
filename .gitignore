@@ -15,7 +15,7 @@ src/main/resources/META-INF/persistence.xml
 **/e2e
 
 # IDEs and editors
-**/.idea
+.idea/
 *.iml
 .project
 .classpath
